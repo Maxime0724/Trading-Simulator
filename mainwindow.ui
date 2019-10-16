@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionOuvrier_un_file_csv"/>
+    <addaction name="actionParametres"/>
+   </widget>
+   <widget class="QMenu" name="menuExecuter">
+    <property name="title">
+     <string>Mode(&amp;M)</string>
+    </property>
+    <addaction name="actionMode_Manuel"/>
+    <addaction name="actionMode_automatique"/>
+    <addaction name="actionMode_pas_a_pas"/>
+    <addaction name="actionAjouter_une_strategie"/>
+   </widget>
+   <widget class="QMenu" name="menuAction_A">
+    <property name="title">
+     <string>Action(&amp;A)</string>
+    </property>
+    <addaction name="actionTransaction"/>
+    <addaction name="actionTransaction_Mode_pas_a_pas"/>
+    <addaction name="actionPasser_au_demain"/>
+    <addaction name="actionAnnuler_la_derniere_transaction"/>
+    <addaction name="actionNote"/>
+    <addaction name="actionQuitter_le_mode_actuel"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuExecuter"/>
+   <addaction name="menuAction_A"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOuvrier_un_file_csv">
+   <property name="text">
+    <string>Ouvrier un &amp;Fichier</string>
+   </property>
+   <property name="iconText">
+    <string>Ouvrier un File (*.csv)</string>
+   </property>
+  </action>
+  <action name="actionMode_Manuel">
+   <property name="text">
+    <string>Mode Manuel</string>
+   </property>
+  </action>
+  <action name="actionMode_automatique">
+   <property name="text">
+    <string>Mode Automatique</string>
+   </property>
+  </action>
+  <action name="actionParametres">
+   <property name="text">
+    <string>Parametres</string>
+   </property>
+  </action>
+  <action name="actionTransaction">
+   <property name="text">
+    <string>Transaction</string>
+   </property>
+  </action>
+  <action name="actionQuitter_le_mode_actuel">
+   <property name="text">
+    <string>Quitter le mode actuel</string>
+   </property>
+  </action>
+  <action name="actionAnnuler_la_derniere_transaction">
+   <property name="text">
+    <string>Annuler la derniere transaction</string>
+   </property>
+  </action>
+  <action name="actionAjouter_une_strategie">
+   <property name="text">
+    <string>Ajouter une strategie</string>
+   </property>
+  </action>
+  <action name="actionMode_pas_a_pas">
+   <property name="text">
+    <string>Mode pas a pas</string>
+   </property>
+  </action>
+  <action name="actionNote">
+   <property name="text">
+    <string>Note</string>
+   </property>
+  </action>
+  <action name="actionTransaction_Mode_pas_a_pas">
+   <property name="text">
+    <string>Transaction (Mode pas a pas)</string>
+   </property>
+  </action>
+  <action name="actionPasser_au_demain">
+   <property name="text">
+    <string>Passer au demain (Mode pas a pas)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
